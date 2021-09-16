@@ -1,0 +1,3 @@
+gfortran tped2vcf_v1.0.f90 -o tped2vcf -O3 -ffree-line-length-none -fno-unsafe-math-optimizations -frounding-math -fsignaling-nans
+gfortran purge_SNPs_v1.1.f90 -o purge_SNPs -O3 -ffree-line-length-none -fno-unsafe-math-optimizations -frounding-math -fsignaling-nans
+gfortran revert_alleles_v1.4.f90 -o revert_alleles -O3 -ffree-line-length-none -fno-unsafe-math-optimizations -frounding-math -fsignaling-nans

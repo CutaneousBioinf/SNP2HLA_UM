@@ -1,0 +1,12 @@
+./SNP2HLA_UM.csh \
+    1958BC_hg38 \
+    HAPMAP_CEU_hg38_REF \
+    1958BC_hg38_imputed \
+    plink \
+    5 \
+    15 \
+    4 \
+    10 \
+    20 \
+`#  plink.chr6.GRCh38.map` \
+> SNP2HLA_hg38.log

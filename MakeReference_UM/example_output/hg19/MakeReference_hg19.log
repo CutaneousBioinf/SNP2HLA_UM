@@ -1,0 +1,107 @@
+MakeReference_UM: Creating reference panel HAPMAP_CEU_hg19_REF
+- Java memory = 5Gb
+- Java stacksize = 15Mb
+- Beagle number of threads = 4 threads
+- Beagle number of burnin interations = 10 interations
+- Beagle number of phasing iterations = 20 iterations
+- Beagle genetic map file = none specified
+
+[1] Generating amino acid sequences from HLA types.
+[2] Encoding amino acids positions.
+[3] Encoding HLA alleles.
+[4] Generating DNA sequences from HLA types.
+[5] Encoding SNP positions.
+
+ purge_SNPs v 1.1
+
+
+[6] Extracting founders.
+[7] Merging SNP, HLA, and amino acid datasets.
+[8] Performing quality control.
+[9] Preparing files for Beagle. 
+[10] Converting to vcf format.
+
+ tped2vcf v 1.0
+
+
+[11] Phasing reference using Beagle.
+beagle.05Apr21.9b7.jar (version 5.2)
+Copyright (C) 2014-2021 Brian L. Browning
+Enter "java -jar beagle.05Apr21.9b7.jar" to list command line argument
+Start time: 11:33 AM EDT on 14 Sep 2021
+
+Command line: java -Xmx5120m -jar beagle.05Apr21.9b7.jar
+  gt=HAPMAP_CEU_hg19_REF.vcf
+  nthreads=4
+  chrom=6
+  burnin=10
+  iterations=20
+  out=HAPMAP_CEU_hg19_REF.bgl
+
+No genetic map is specified: using 1 cM = 1 Mb
+
+Reference samples:                    0
+Study     samples:                   92
+
+Window 1 [6:25901133-33370232]
+Reference markers:                8,071
+Study     markers:                8,071
+
+Burnin  iteration 1:           5 seconds
+
+Phasing iteration 1:           1 second
+
+Phasing iteration 2:           1 second
+
+Phasing iteration 3:           0 seconds
+
+Phasing iteration 4:           0 seconds
+
+Phasing iteration 5:           0 seconds
+
+Phasing iteration 6:           0 seconds
+
+Phasing iteration 7:           0 seconds
+
+Phasing iteration 8:           0 seconds
+
+Phasing iteration 9:           0 seconds
+
+Phasing iteration 10:          0 seconds
+
+Phasing iteration 11:          0 seconds
+
+Phasing iteration 12:          0 seconds
+
+Phasing iteration 13:          0 seconds
+
+Phasing iteration 14:          0 seconds
+
+Phasing iteration 15:          0 seconds
+
+Phasing iteration 16:          0 seconds
+
+Phasing iteration 17:          0 seconds
+
+Phasing iteration 18:          0 seconds
+
+Phasing iteration 19:          0 seconds
+
+Phasing iteration 20:          0 seconds
+
+Cumulative Statistics:
+
+Study     markers:                8,071
+
+Haplotype phasing time:        13 seconds
+Total time:                    15 seconds
+
+End time: 11:33 AM EDT on 14 Sep 2021
+beagle.05Apr21.9b7.jar finished
+
+[12] Reverting hacked allele identities in *.bgl.vcf file back to those traditionally used by SNP2HLA.
+
+ revert_alleles v 1.4
+
+
+[13] Done.

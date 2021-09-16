@@ -1,0 +1,13 @@
+./MakeReference_UM.csh \
+    HAPMAP_CEU_hg19 \
+    HAPMAP_CEU_HLA_new.ped \
+    HAPMAP_CEU_hg19_REF \
+    plink \
+    hg19 \
+    5 \
+    15 \
+    4 \
+    10 \
+    20 \
+`#  plink.chr6.GRCh37.map` \
+> MakeReference_hg19.log

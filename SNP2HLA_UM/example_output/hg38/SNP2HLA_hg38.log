@@ -1,0 +1,108 @@
+SNP2HLA_UM: Performing HLA imputation for dataset 1958BC_hg38
+- Java memory = 5Gb
+- Java stacksize = 15Mb
+- Beagle number of threads = 4 threads
+- Beagle number of burnin iterations = 10 iterations
+- Beagle number of phasing iterations = 20 iterations
+- Beagle genetic map file = none specified
+
+[1] Hacking non-standard allele identities in .vcf reference panel to a form permitted by Beagle 5.2.
+
+ hack_vcf v 1.0
+
+
+[2] Extracting SNPs from the MHC.
+
+[3] Performing SNP quality control.
+
+[4] Performing HLA imputation.
+beagle.05Apr21.9b7.jar (version 5.2)
+Copyright (C) 2014-2021 Brian L. Browning
+Enter "java -jar beagle.05Apr21.9b7.jar" to list command line argument
+Start time: 11:42 AM EDT on 14 Sep 2021
+
+Command line: java -Xmx5120m -jar beagle.05Apr21.9b7.jar
+  ref=HAPMAP_CEU_hg38_REF.vcf
+  gt=1958BC_hg38_imputed.MHC.QC.vcf
+  impute=true
+  gp=true
+  nthreads=4
+  chrom=6
+  burnin=10
+  iterations=20
+  out=1958BC_hg38_imputed.bgl
+
+No genetic map is specified: using 1 cM = 1 Mb
+
+Reference samples:                   92
+Study     samples:                   10
+
+Window 1 [6:25900905-33402455]
+Reference markers:                8,071
+Study     markers:                1,261
+
+Burnin  iteration 1:           1 second
+
+Burnin  iteration 2:           0 seconds
+
+Phasing iteration 1:           0 seconds
+
+Phasing iteration 2:           0 seconds
+
+Phasing iteration 3:           0 seconds
+
+Phasing iteration 4:           0 seconds
+
+Phasing iteration 5:           0 seconds
+
+Phasing iteration 6:           0 seconds
+
+Phasing iteration 7:           0 seconds
+
+Phasing iteration 8:           0 seconds
+
+Phasing iteration 9:           0 seconds
+
+Phasing iteration 10:          0 seconds
+
+Phasing iteration 11:          0 seconds
+
+Phasing iteration 12:          0 seconds
+
+Phasing iteration 13:          0 seconds
+
+Phasing iteration 14:          0 seconds
+
+Phasing iteration 15:          0 seconds
+
+Phasing iteration 16:          0 seconds
+
+Phasing iteration 17:          0 seconds
+
+Phasing iteration 18:          0 seconds
+
+Phasing iteration 19:          0 seconds
+
+Phasing iteration 20:          0 seconds
+
+Imputation time:               0 seconds
+
+Cumulative Statistics:
+
+Reference markers:                8,071
+Study     markers:                1,261
+
+Haplotype phasing time:        1 second
+Imputation time:               0 seconds
+Total time:                    2 seconds
+
+End time: 11:42 AM EDT on 14 Sep 2021
+beagle.05Apr21.9b7.jar finished
+
+[5] Reverting hacked allele identities in *.vcf imputation output file back to those used by reference panel.
+
+ revert_alleles v 1.4
+
+
+DONE!
+

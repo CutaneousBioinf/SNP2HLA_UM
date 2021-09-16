@@ -1,0 +1,2 @@
+gfortran hack_vcf_v1.0.f90 -o hack_vcf -O3 -ffree-line-length-none -fno-unsafe-math-optimizations -frounding-math -fsignaling-nans
+gfortran revert_alleles_v1.4.f90 -o revert_alleles -O3 -ffree-line-length-none -fno-unsafe-math-optimizations -frounding-math -fsignaling-nans
