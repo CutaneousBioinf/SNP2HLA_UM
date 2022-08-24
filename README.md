@@ -91,7 +91,7 @@ Examples of input and output files can be found in directories /MakeReference_UM
 
 - Plink .bed/bim/fam files with genotype data for SNPs in the MHC region (chr6:29-34 Mb)
 - HLA pedigree data file holding sample information and 2-field HLA genotypes for 11 HLA genes; columns are in the following order:
-FID, IID, pID, mID, SEX, PHENO, HLA-A, HLA-B, HLA-C, HLA-DPA1, HLA-DPB1, HLA-DQA1, HLA-DRB1, HLA-DRB3, HLA-DRB4, HLA-DRB5.  Untyped
+FID, IID, pID, mID, SEX, PHENO, HLA-A, HLA-B, HLA-C, HLA-DPA1, HLA-DPB1, HLA-DQA1, HLA-DQB1, HLA-DRB1, HLA-DRB3, HLA-DRB4, HLA-DRB5.  Untyped
 alleles are denoted with a 0; missing copies of HLA-DRB3/4/5 alleles are denoted with a 99:99.  All columns must be present, even
 for HLA genes with no typing for the entire dataset.
 
